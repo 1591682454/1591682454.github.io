@@ -35,16 +35,16 @@
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="git基础使用1.1 git init初始化  到文件夹目录执行git init  git initInitialized empty Git repository in C:&#x2F;Users&#x2F;Administrator&#x2F;Desktop&#x2F;git学习&#x2F;实操&#x2F;.git&#x2F;    1.2 git add 添加文件 使用git add . 添加所有文件 使用git add index.html 添加index.">
+    <meta name="description" content="git基础使用1.1 git init初始化  到文件夹目录执行git init  12git initInitialized empty Git repository in C:&#x2F;Users&#x2F;Administrator&#x2F;Desktop&#x2F;git学习&#x2F;实操&#x2F;.git&#x2F;    1.2 git add 添加文件 使用git add . 添加所有文件 使用git add index.html 添加inde">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git基础使用">
 <meta property="og:url" content="http://example.com/2021/03/22/git%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="git基础使用1.1 git init初始化  到文件夹目录执行git init  git initInitialized empty Git repository in C:&#x2F;Users&#x2F;Administrator&#x2F;Desktop&#x2F;git学习&#x2F;实操&#x2F;.git&#x2F;    1.2 git add 添加文件 使用git add . 添加所有文件 使用git add index.html 添加index.">
+<meta property="og:description" content="git基础使用1.1 git init初始化  到文件夹目录执行git init  12git initInitialized empty Git repository in C:&#x2F;Users&#x2F;Administrator&#x2F;Desktop&#x2F;git学习&#x2F;实操&#x2F;.git&#x2F;    1.2 git add 添加文件 使用git add . 添加所有文件 使用git add index.html 添加inde">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://up.zhuoku.org/pic_360/cc/c1/29/ccc12969c8b808bcf293366c8048cc80.jpg">
 <meta property="article:published_time" content="2021-03-22T08:04:35.000Z">
-<meta property="article:modified_time" content="2021-03-22T09:30:09.735Z">
+<meta property="article:modified_time" content="2021-03-22T14:40:49.926Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
@@ -183,7 +183,7 @@
         <h1 id="git基础使用"><a href="#git基础使用" class="headerlink" title="git基础使用"></a>git基础使用</h1><h4 id="1-1-git-init初始化"><a href="#1-1-git-init初始化" class="headerlink" title="1.1 git init初始化"></a>1.1 <code>git init</code>初始化</h4><blockquote>
 <p> 到文件夹目录执行git init</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git init</span><br><span class="line">Initialized empty Git repository in C:/Users/Administrator/Desktop/git学习/实操/.git/</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">Initialized empty Git repository in C:/Users/Administrator/Desktop/git学习/实操/.git/</span><br></pre></td></tr></table></figure>
 
 
 
@@ -191,48 +191,58 @@
 <p>使用git add . 添加所有文件</p>
 <p>使用git add index.html 添加index.html这个文件</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git add index.html</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add index.html</span><br></pre></td></tr></table></figure>
 
 
 
 <h4 id="1-3-git-status-查看状态"><a href="#1-3-git-status-查看状态" class="headerlink" title="1.3 git status 查看状态"></a>1.3 <code>git status</code> 查看状态</h4><blockquote>
 <p> 添加index.html的状态（改变已提交）</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git status</span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span><br><span class="line">        new file:   index.html</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git status</span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span><br><span class="line">        new file:   index.html</span><br></pre></td></tr></table></figure>
+
+
 
 <blockquote>
-<p>修改index.html再看看（改变需提交）</p>
+<p> 修改index.html再看看（改变需提交）</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git status</span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span><br><span class="line">        new file:   index.html</span><br><span class="line"></span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">        modified:   index.html</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git status</span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">No commits yet</span><br><span class="line"></span><br><span class="line">Changes to be committed:</span><br><span class="line">  (use &quot;git rm --cached &lt;file&gt;...&quot; to unstage)</span><br><span class="line">        new file:   index.html</span><br><span class="line"></span><br><span class="line">Changes not staged for commit:</span><br><span class="line">  (use &quot;git add &lt;file&gt;...&quot; to update what will be committed)</span><br><span class="line">  (use &quot;git restore &lt;file&gt;...&quot; to discard changes in working directory)</span><br><span class="line">        modified:   index.html</span><br></pre></td></tr></table></figure>
 
 
 
 <h4 id="1-4-git-commit-m-“描述”-提交"><a href="#1-4-git-commit-m-“描述”-提交" class="headerlink" title="1.4 git commit -m “描述” 提交"></a>1.4 <code>git commit -m</code> “描述” 提交</h4><blockquote>
 <p>git commit -m “第一次提交”</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m &quot;第一次提交&quot;</span><br><span class="line">[master (root-commit) 23f2ee4] 第一次提交</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 index.html</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m &quot;第一次提交&quot;</span><br><span class="line">[master (root-commit) 23f2ee4] 第一次提交</span><br><span class="line"> 1 file changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 index.html</span><br></pre></td></tr></table></figure>
+
+
 
 <p>这里已经提交了成功，并创建了mode为100644</p>
 <h4 id="1-5-git-log-查看全部提交信息"><a href="#1-5-git-log-查看全部提交信息" class="headerlink" title="1.5 git log 查看全部提交信息"></a>1.5 <code>git log</code> 查看全部提交信息</h4><blockquote>
 <p>git log </p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git log</span><br><span class="line">WARNING: terminal is not fully functional</span><br><span class="line">commit 23f2ee40473b8e643a438a2711715eff9ec5cef7 (HEAD -&gt; master)</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Sun Mar 21 23:59:58 2021 +0800</span><br><span class="line"></span><br><span class="line">    &lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;B8&gt;&lt;80&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git log</span><br><span class="line">WARNING: terminal is not fully functional</span><br><span class="line">commit 23f2ee40473b8e643a438a2711715eff9ec5cef7 (HEAD -&gt; master)</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Sun Mar 21 23:59:58 2021 +0800</span><br><span class="line"></span><br><span class="line">    &lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;B8&gt;&lt;80&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;</span><br></pre></td></tr></table></figure>
+
+
 
 <p>这里已经看到了之前我提交的那次记录，并且记录了提交者和提交时间</p>
 <h4 id="1-6-git-reset-hard-HEAD-回滚版本"><a href="#1-6-git-reset-hard-HEAD-回滚版本" class="headerlink" title="1.6 git reset -- hard HEAD^回滚版本"></a>1.6 <code>git reset -- hard HEAD^</code>回滚版本</h4><p>首先，Git必须知道当前版本是哪个版本，在Git中，用<code>HEAD</code>表示当前版本，也就是最新的提交<code>1094adb...</code>（注意我的提交ID和你的肯定不一样），上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个<code>^</code>比较容易数不过来，所以写成<code>HEAD~100</code>。</p>
-<p>现在，我们要把当前版本<code>append GPL</code>回退到上一个版本<code>add distributed</code>，就可以使用<code>git reset</code>命令：</p>
+<p>现在，我们要把当前版本<code>append GPL</code>回退到上一个版本<code>add distributed</code>，就可以使用<code>git reset</code>命令</p>
 <p>这里我新增了一个style.css文件并完成了第二次提交</p>
 <p>但是我反悔了，因为第二次提交的代码有bug</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m &#x27;第二次提交，不完美&#x27;</span><br><span class="line">[master 302e03d] &#x27;第二次提交，不完美&#x27;</span><br><span class="line"> 1 file changed, 0 insertions(+), 0 deletions(-)</span><br><span class="line"> create mode 100644 style.css</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git log</span><br><span class="line">commit 302e03d3fa4ddedbbcf4d8b2b55777a4b35d0db4 (HEAD -&gt; master)</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Mon Mar 22 00:10:12 2021 +0800</span><br><span class="line"></span><br><span class="line">    &#x27;&lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;BA&gt;&lt;8C&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;&lt;EF&gt;&lt;BC&gt;&lt;8C&gt;&lt;E4&gt;&lt;B8&gt;&lt;8D&gt;&lt;E5&gt;&lt;AE&gt;&lt;8C&gt;&lt;E7&gt;&lt;BE&gt;&lt;8E&gt;&#x27;</span><br><span class="line"></span><br><span class="line">commit 23f2ee40473b8e643a438a2711715eff9ec5cef7</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Sun Mar 21 23:59:58 2021 +0800</span><br><span class="line"></span><br><span class="line">    &lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;B8&gt;&lt;80&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m &#x27;第二次提交，不完美&#x27;</span><br><span class="line">[master 302e03d] &#x27;第二次提交，不完美&#x27;</span><br><span class="line"> 1 file changed, 0 insertions(+), 0 deletions(-)</span><br><span class="line"> create mode 100644 style.css</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git log</span><br><span class="line">commit 302e03d3fa4ddedbbcf4d8b2b55777a4b35d0db4 (HEAD -&gt; master)</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Mon Mar 22 00:10:12 2021 +0800</span><br><span class="line"></span><br><span class="line">    &#x27;&lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;BA&gt;&lt;8C&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;&lt;EF&gt;&lt;BC&gt;&lt;8C&gt;&lt;E4&gt;&lt;B8&gt;&lt;8D&gt;&lt;E5&gt;&lt;AE&gt;&lt;8C&gt;&lt;E7&gt;&lt;BE&gt;&lt;8E&gt;&#x27;</span><br><span class="line"></span><br><span class="line">commit 23f2ee40473b8e643a438a2711715eff9ec5cef7</span><br><span class="line">Author: sakura &lt;1591682454@qq.com&gt;</span><br><span class="line">Date:   Sun Mar 21 23:59:58 2021 +0800</span><br><span class="line"></span><br><span class="line">    &lt;E7&gt;&lt;AC&gt;&lt;AC&gt;&lt;E4&gt;&lt;B8&gt;&lt;80&gt;&lt;E6&gt;&lt;AC&gt;&lt;A1&gt;&lt;E6&gt;&lt;8F&gt;&lt;90&gt;&lt;E4&gt;&lt;BA&gt;&lt;A4&gt;</span><br></pre></td></tr></table></figure>
+
+
 
 <p>接下来我想恢复到第一次的版本</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset -- hard HEAD^</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset -- hard HEAD^</span><br></pre></td></tr></table></figure>
+
+
 
 <p>这里失败了，windows的cmd必须这样</p>
 <blockquote>
 <p>git reset –hard “HEAD^”</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset --hard &quot;HEAD^&quot;</span><br><span class="line">HEAD is now at 23f2ee4 第一次提交</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset --hard &quot;HEAD^&quot;</span><br><span class="line">HEAD is now at 23f2ee4 第一次提交</span><br></pre></td></tr></table></figure>
 
 <p>具体原因看看<a target="_blank" rel="noopener" href="https://blog.csdn.net/voledmort/article/details/100794005">csdn解答</a></p>
 <p>这里显示HEAD is now at 23f2ee4 第一次提交,表示已经回滚到了第一次提交的时候</p>
@@ -243,7 +253,9 @@
 <blockquote>
 <p>git reset –hard 302e03</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset --hard 302e03</span><br><span class="line">HEAD is now at 302e03d &#x27;第二次提交，不完美&#x27;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git reset --hard 302e03</span><br><span class="line">HEAD is now at 302e03d &#x27;第二次提交，不完美&#x27;</span><br></pre></td></tr></table></figure>
+
+
 
 <p>哎，我又回来了(如果没备份吃commit码建议去网上寻找答案)</p>
 <h4 id="1-7-git-checkout-file丢弃工作区的修改"><a href="#1-7-git-checkout-file丢弃工作区的修改" class="headerlink" title="1.7 git checkout -- file丢弃工作区的修改"></a>1.7 <code>git checkout -- file</code>丢弃工作区的修改</h4><p>命令<code>git checkout -- readme.txt</code>意思就是，把<code>readme.txt</code>文件在工作区的修改全部撤销，这里有两种情况：</p>
@@ -264,7 +276,9 @@
 </blockquote>
 <p>推送当前分支版本到名为res的远程仓库</p>
 <p>推送结果</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git push -u res master</span><br><span class="line">Username for &#x27;https://gitee.com&#x27;: ssssshql</span><br><span class="line">Password for &#x27;https://ssssshql@gitee.com&#x27;:</span><br><span class="line">Enumerating objects: 6, done.</span><br><span class="line">Counting objects: 100% (6/6), done.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (3/3), done.</span><br><span class="line">Writing objects: 100% (6/6), 501 bytes | 501.00 KiB/s, done.</span><br><span class="line">Total 6 (delta 0), reused 0 (delta 0), pack-reused 0</span><br><span class="line">remote: Powered by GITEE.COM [GNK-5.0]</span><br><span class="line">To https://gitee.com/ssssshql/gitstudy.git</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch &#x27;master&#x27; set up to track remote branch &#x27;master&#x27; from &#x27;res&#x27;.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git push -u res master</span><br><span class="line">Username for &#x27;https://gitee.com&#x27;: ssssshql</span><br><span class="line">Password for &#x27;https://ssssshql@gitee.com&#x27;:</span><br><span class="line">Enumerating objects: 6, done.</span><br><span class="line">Counting objects: 100% (6/6), done.</span><br><span class="line">Delta compression using up to 8 threads</span><br><span class="line">Compressing objects: 100% (3/3), done.</span><br><span class="line">Writing objects: 100% (6/6), 501 bytes | 501.00 KiB/s, done.</span><br><span class="line">Total 6 (delta 0), reused 0 (delta 0), pack-reused 0</span><br><span class="line">remote: Powered by GITEE.COM [GNK-5.0]</span><br><span class="line">To https://gitee.com/ssssshql/gitstudy.git</span><br><span class="line"> * [new branch]      master -&gt; master</span><br><span class="line">Branch &#x27;master&#x27; set up to track remote branch &#x27;master&#x27; from &#x27;res&#x27;.</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
 
 <p>然后到gitte看，果然已经推送成功</p>
 <p>ps:把本地库的内容推送到远程，用<code>git push</code>命令，实际上是把当前分支<code>master</code>推送到远程。</p>
@@ -276,27 +290,29 @@
 <h4 id="2-1-git-branch-dev-创建名为dev的分支"><a href="#2-1-git-branch-dev-创建名为dev的分支" class="headerlink" title="2.1  git branch dev 创建名为dev的分支"></a>2.1  git branch dev 创建名为dev的分支</h4><blockquote>
 <p>创建分支 dev</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git branch dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch dev</span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>切换到分支dev</p>
 </blockquote>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout dev</span><br></pre></td></tr></table></figure>
 
 <p>前面两条命令的合并</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout  -b dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout  -b dev</span><br></pre></td></tr></table></figure>
+
+
 
 <h4 id="2-2-git-merge-dev-合并名为dev的分支"><a href="#2-2-git-merge-dev-合并名为dev的分支" class="headerlink" title="2.2 git merge dev 合并名为dev的分支"></a>2.2 git merge dev 合并名为dev的分支</h4><p>上面我已经创建并切换到了dev分支，在这个分支的操作不会影响master分支</p>
 <p>我写了一个js文件并提交到了dev分支</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m  &quot;这是在dev分支上提交的版本&quot;</span><br><span class="line">[dev 8eb10c0] 这是在dev分支上提交的版本</span><br><span class="line"> 2 files changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 &quot;\344\270\200\344\270\252\347\211\233\351\200\274\347\232\204js\346\226\207\344\273\266.js&quot;</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Desktop\git学习\实操&gt;git commit -m  &quot;这是在dev分支上提交的版本&quot;</span><br><span class="line">[dev 8eb10c0] 这是在dev分支上提交的版本</span><br><span class="line"> 2 files changed, 1 insertion(+)</span><br><span class="line"> create mode 100644 &quot;\344\270\200\344\270\252\347\211\233\351\200\274\347\232\204js\346\226\207\344\273\266.js&quot;</span><br></pre></td></tr></table></figure>
 
 <p>提交成功！！！</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git push res dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push res dev</span><br></pre></td></tr></table></figure>
 
 <p>提交dev分支到res远程仓库</p>
 <p>然后我发现dev分支确实做的不错，想要合并到master分支</p>
 <p>切换到 master分支,合并修改</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git checkout master</span><br><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
 
 <p>到这里就已经合并完成了，master分支已经同步过去了，已经是本地commit但git log 并未显示。</p>
 <blockquote>
@@ -306,7 +322,7 @@
 
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2021-03-22 17:30:09</p></div> 
+    <div class="post-footer__meta"><p>updated at 2021-03-22 22:40:49</p></div> 
     <div class="post-meta__cats"><a href="/tags/%E5%AD%A6%E4%B9%A0/" class="post-tags__link button"># 学习</a></div> 
 </article>
 

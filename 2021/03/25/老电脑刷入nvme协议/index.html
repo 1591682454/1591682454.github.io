@@ -25,30 +25,30 @@
     <!-- meta -->
 
 
-<title>promise的理解 | Hexo</title>
+<title>老电脑刷入nvme协议 | Hexo</title>
 
 
-    <meta name="keywords" content="javascript">
+    <meta name="keywords" content="电脑">
 
 
 
 
     <!-- OpenGraph -->
  
-    <meta name="description" content="romisepromise1、promise的简单理解promise   n. 许诺，允诺；希望 vt. 允诺，许诺；给人以……的指望或希望 vi. 许诺；有指望，有前途   可以理解为promise一定会给你一个承诺，无论是好是坏。  1234567891011121314let ajax&#x3D;new Promise((resolve,reject)&#x3D;&gt;&amp;#123;    if(请求成功)&amp;#">
+    <meta name="description" content="老电脑bios刷入NVME模块   Page 1  前几天买了根西数sn550给笔记本当系统盘没想到bios不支持。在系统中是能读到这个磁盘的，但是在bios中不显示磁盘也无法设置为启动项。 难道就只能当个副盘？那系统不是还和以前一样慢？ 不不不，修仙之人岂能受如此委屈？ 先来看看笔记本型号，神舟战神Z6-I78172D1，很容易就在网上能找到磁盘位的信息。  一个m.2接口？ 这不是能直接用？">
 <meta property="og:type" content="article">
-<meta property="og:title" content="promise的理解">
-<meta property="og:url" content="http://example.com/2021/03/22/promise%E7%9A%84%E7%90%86%E8%A7%A3/index.html">
+<meta property="og:title" content="老电脑刷入nvme协议">
+<meta property="og:url" content="http://example.com/2021/03/25/%E8%80%81%E7%94%B5%E8%84%91%E5%88%B7%E5%85%A5nvme%E5%8D%8F%E8%AE%AE/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="romisepromise1、promise的简单理解promise   n. 许诺，允诺；希望 vt. 允诺，许诺；给人以……的指望或希望 vi. 许诺；有指望，有前途   可以理解为promise一定会给你一个承诺，无论是好是坏。  1234567891011121314let ajax&#x3D;new Promise((resolve,reject)&#x3D;&gt;&amp;#123;    if(请求成功)&amp;#">
+<meta property="og:description" content="老电脑bios刷入NVME模块   Page 1  前几天买了根西数sn550给笔记本当系统盘没想到bios不支持。在系统中是能读到这个磁盘的，但是在bios中不显示磁盘也无法设置为启动项。 难道就只能当个副盘？那系统不是还和以前一样慢？ 不不不，修仙之人岂能受如此委屈？ 先来看看笔记本型号，神舟战神Z6-I78172D1，很容易就在网上能找到磁盘位的信息。  一个m.2接口？ 这不是能直接用？">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s1.ax1x.com/2020/09/12/wa631s.jpg">
-<meta property="article:published_time" content="2021-03-22T08:28:45.000Z">
-<meta property="article:modified_time" content="2021-03-22T14:37:32.604Z">
+<meta property="og:image" content="https://z3.ax1x.com/2021/03/25/6qzYQK.jpg">
+<meta property="article:published_time" content="2021-03-24T17:00:01.000Z">
+<meta property="article:modified_time" content="2021-03-24T17:31:07.542Z">
 <meta property="article:author" content="John Doe">
-<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="电脑">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://s1.ax1x.com/2020/09/12/wa631s.jpg">
+<meta name="twitter:image" content="https://z3.ax1x.com/2021/03/25/6qzYQK.jpg">
 
 
     
@@ -139,10 +139,10 @@
 
 <div class="post-title">
     <h1 class="post-title__text">
-        promise的理解
+        老电脑刷入nvme协议
     </h1>
     <div class="post-title__meta">
-        <a href="/archives/2021/03/" class="post-meta__date button">2021-03-22 16:28:45</a>
+        <a href="/archives/2021/03/" class="post-meta__date button">2021-03-25 01:00:01</a>
         
  
         
@@ -159,7 +159,7 @@
 
     <aside class="post-side">
         <div class="post-side__toc">
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#promise"><span class="toc-text">promise</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81promise%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3"><span class="toc-text">1、promise的简单理解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81async%E5%8F%8Aawait"><span class="toc-text">2、async及await</span></a></li></ol></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%80%81%E7%94%B5%E8%84%91bios%E5%88%B7%E5%85%A5NVME%E6%A8%A1%E5%9D%97"><span class="toc-text">老电脑bios刷入NVME模块</span></a></li></ol>
         </div>
     </aside>
     <a class="btn-toc button" id="btn-toc" tabindex="0">
@@ -169,81 +169,96 @@
     </a>
     <div class="toc-menus" id="toc-menus">
         <div class="toc-title">Article Directory</div>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#promise"><span class="toc-text">promise</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81promise%E7%9A%84%E7%AE%80%E5%8D%95%E7%90%86%E8%A7%A3"><span class="toc-text">1、promise的简单理解</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81async%E5%8F%8Aawait"><span class="toc-text">2、async及await</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%80%81%E7%94%B5%E8%84%91bios%E5%88%B7%E5%85%A5NVME%E6%A8%A1%E5%9D%97"><span class="toc-text">老电脑bios刷入NVME模块</span></a></li></ol>
     </div>
 
 
 <article class="post content-card">
     <div class="post__header">
     
-        <div class="post-thumbnail" style="background-image: url('https://s1.ax1x.com/2020/09/12/wa631s.jpg');"></div>
+        <div class="post-thumbnail" style="background-image: url('https://z3.ax1x.com/2021/03/25/6qzYQK.jpg');"></div>
     
 </div>
     <div class="post__content">
-        <h1 id="romise"><a href="#romise" class="headerlink" title="romise"></a>romise</h1><h2 id="promise"><a href="#promise" class="headerlink" title="promise"></a>promise</h2><h4 id="1、promise的简单理解"><a href="#1、promise的简单理解" class="headerlink" title="1、promise的简单理解"></a>1、promise的简单理解</h4><p><code>promise  </code></p>
-<p>n. 许诺，允诺；希望</p>
-<p>vt. 允诺，许诺；给人以……的指望或希望</p>
-<p>vi. 许诺；有指望，有前途</p>
+        <h2 id="老电脑bios刷入NVME模块"><a href="#老电脑bios刷入NVME模块" class="headerlink" title="老电脑bios刷入NVME模块"></a>老电脑bios刷入NVME模块</h2><p><img src="https://z3.ax1x.com/2021/03/25/6qzYQK.jpg" alt="图片"></p>
 <blockquote>
-<p> 可以理解为promise一定会给你一个承诺，无论是好是坏。</p>
+<p> <font color=#8EC965 size=5>Page 1</font></p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> ajax=<span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function">(<span class="params">resolve,reject</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(请求成功)&#123;</span><br><span class="line">        resolve(获得的数据:data)</span><br><span class="line">    &#125;<span class="function"><span class="title">else</span>(<span class="params">请求失败</span>)</span>&#123;</span><br><span class="line">        reject(error)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)</span><br><span class="line">ajax.then(<span class="function"><span class="params">res</span>=&gt;</span>&#123;</span><br><span class="line">    请求成功拿到数据</span><br><span class="line">    。。。。</span><br><span class="line">&#125;).then(<span class="function"><span class="params">rej</span>=&gt;</span>&#123;</span><br><span class="line">    请求失败打印原因</span><br><span class="line">    。。。。</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+<p>前几天买了根西数sn550给笔记本当系统盘没想到bios不支持。在系统中是能读到这个磁盘的，但是在bios中不显示磁盘也<font color=#D76E57>无法设置为启动项</font>。</p>
+<p><font color=#FF8124>难道就只能当个<strong>副盘</strong>？那系统不是还和以前一样慢？</font></p>
+<p>不不不，修仙之人岂能受如此委屈？</p>
+<p>先来看看笔记本型号，神舟战神Z6-I78172D1，很容易就在网上能找到磁盘位的信息。</p>
+<p><img src="https://z3.ax1x.com/2021/03/25/6LSATH.png" alt="图片"></p>
+<p>一个<font color=#8EBC43>m.2接口</font>？</p>
+<p>这不是能直接用？</p>
+<p>后来找了很多资料才发现问题所在，现在的m.2接口确实支持SATA协议和NVME协议，但是在15年m.2接口只支持SATA协议。这我就纳闷了，你说这吧，插都能插进去你整这出？</p>
+<p>后来发现确实能插进去，也能用，只是<font color=#FF271C>速度会限制为sata协议的速度降了不止一倍</font>。这明显不是我想看到的。</p>
+<p>本来我都打算放弃的，但是退一步越想越气o（′益`）o</p>
+<p>继续到了找资料的途中，说来确实不愧是老电脑了，论坛贴吧能找的资料少之又少，不过还好留下了<font color=#BA4A61><strong>刷NVME</strong></font>的词条。顺着这个词条我找到了很多相似经历的小伙伴的记录，虽然型号不同，但是可以作为参考。</p>
+<p><img src="https://z3.ax1x.com/2021/03/25/6LSVkd.png" alt="图片"></p>
+<p>网址：<a target="_blank" rel="noopener" href="https://www.pianshen.com/article/1801418606/">https://www.pianshen.com/article/1801418606/</a></p>
+<p>根据这个教程，我大致理了一下思路。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1、首先下载本机刷BIOS工具</span><br><span class="line"></span><br><span class="line">2、修改BIOS添加NVME协议</span><br><span class="line"></span><br><span class="line">3、刷入BIOS</span><br></pre></td></tr></table></figure>
 
-<h4 id="2、async及await"><a href="#2、async及await" class="headerlink" title="2、async及await"></a>2、async及await</h4><blockquote>
-<p>async和await是现在异步加载的最好方案。</p>
-</blockquote>
-<p>在es5通常是这样做的</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//先创建一个Ajax函数用来发送请求</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params"><span class="string">&#x27;url&#x27;</span>,回调函数</span>)</span>&#123;......&#125;</span><br><span class="line"><span class="comment">//然后你可能会这样做</span></span><br><span class="line">ajax(url,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">		ajax(url,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">			ajax(url,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">				ajax(url,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">					ajax(url,<span class="function">()=&gt;</span>&#123;</span><br><span class="line">						</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
 
 
-
-<blockquote>
-<p>这称之为<code>回调地域</code>，为了避免这种情况promise出现了。</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">promise()</span><br><span class="line">.then()</span><br><span class="line">.then()</span><br><span class="line">.then()</span><br><span class="line">.then()</span><br></pre></td></tr></table></figure>
-
-<p>这种调用明显好看了许多。</p>
-<p>async和await其实也是promise的语法糖</p>
-<p>看一个例子</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//假设ajax是一个异步获取数据的函数</span></span><br><span class="line"><span class="comment">//我的目的是先获取头像再获取昵称</span></span><br><span class="line"><span class="keyword">async</span> <span class="function"><span class="keyword">function</span> <span class="title">run</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="keyword">let</span> heade = <span class="keyword">await</span> ajax(...)</span><br><span class="line">    <span class="keyword">let</span> name = <span class="keyword">await</span> ajax(...)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>await 表示这里会停下执行这个函数，只有这个函数执行完才会继续往下执行</p>
-<p>如果没有它，我们无法预料两个异步函数谁会先执行完。</p>
+<p>思路有了那就开始动手，首先根据上面那篇博文说的，我们来到了蓝天模具BIOS下载地址：</p>
+<p><a target="_blank" rel="noopener" href="http://repo.palkeo.com/clevo-mirror/">http://repo.palkeo.com/clevo-mirror/</a></p>
+<p>用户名密码均为repo</p>
+<p>一进去我也有点懵，全是英文，右键一键翻译，我又行了。首先要知道自己笔记本用的啥模具，进bios就可以看到。比如我的就是N151SD，回到网页点进去就是下图。好家伙最近更新日期2015/09/14</p>
+<p><img src="https://z3.ax1x.com/2021/03/25/6LSZtA.png" alt="图片"></p>
+<p>这是刚出来就停更了？反正又不是不能用.jpg。分析描述可以得知，这里下载BIOS包要注意，刷入bios有EC固件版本要求，也就是说我们要先刷EC固件再刷BIOS。</p>
+<p>到这里准备我就已经具备了刷BIOS的条件，因为我U盘已经做过了微PE启动盘。</p>
+<p>后面就是修改BIOS了，具体参考下面吾爱的教程。</p>
+<p><img src="https://z3.ax1x.com/2021/03/25/6LSefI.png" alt="图片"></p>
+<p>网址：<a target="_blank" rel="noopener" href="https://www.52pojie.cn/thread-1136840-1-1.html">https://www.52pojie.cn/thread-1136840-1-1.html</a></p>
+<p>这里需要打开bios文件，打开下载好的bios包，观察可知两个.0后缀的文件应该就是bios了。</p>
+<p>修改完成替换进之前下载好的bios包。</p>
+<p>这里已经我修改好了bios，接下来回到刷BIOS的那篇博文，照着输入命令即可。</p>
+<p>成功后开机logo会变成蓝天的，如果失败会开不了机还可能搞坏主板啥的，刷坏bios需要到电脑店找专门的机器刷。</p>
+<p>简单来说，就是逆天改命渡雷劫一般，成则实力大进，败则灰飞烟灭。</p>
+<p>不过吾辈修仙之人岂可退缩，区区雷劫而已。</p>
+<p>后来在B站看到一个同型号已经渡劫成功的视频</p>
+<p><a target="_blank" rel="noopener" href="https://b23.tv/Ae5kGX">https://b23.tv/Ae5kGX</a></p>
+<p>，有需要也可以找那个up取取经。</p>
+<p>这里说说有些要注意的事项：</p>
+<p>1、u盘启动dos工具箱刷bios只会识别u盘，u盘要格式化为fat16更好。我是这样的，不知道其他人。</p>
+<p>2、我用微pe进dos工具箱刷不了换成大白菜就好了。虽然是流氓PE但只要不拿来装系统就没太大问题。</p>
+<p>-—————————</p>
+<p>刷BIOS有风险</p>
+<p>你必须知道自己在做什么</p>
+<p>-—————————</p>
+<p>刷完就简单了，迁移系统，修复引导，进bios改引导项(虽然刷入了nvme协议但是bios中并不会显示，只是可以看到引导项有这块磁盘的)。开机发现开机速度明显变快。成功进入系统完美。</p>
+<p>接下来放一张测速图</p>
+<p><img src="https://z3.ax1x.com/2021/03/25/6LSnpt.png" alt="图片"></p>
+<p>这个速度已经超过了sata协议的速度，</p>
+<p>所以这代表我刷成功了。</p>
+<p>-—————————</p>
+<p>刷BIOS有风险</p>
+<p>你必须知道自己在做什么</p>
+<p>-—————————</p>
+<p>END</p>
 
     </div>
      
-    <div class="post-footer__meta"><p>updated at 2021-03-22 22:37:32</p></div> 
-    <div class="post-meta__cats"><a href="/tags/javascript/" class="post-tags__link button"># javascript</a></div> 
+    <div class="post-footer__meta"><p>updated at 2021-03-25 01:31:07</p></div> 
+    <div class="post-meta__cats"><a href="/tags/%E7%94%B5%E8%84%91/" class="post-tags__link button"># 电脑</a></div> 
 </article>
 
 
     <div class="nav">
         <div class="nav__prev">
             
-                <a href="/2021/03/25/%E8%80%81%E7%94%B5%E8%84%91%E5%88%B7%E5%85%A5nvme%E5%8D%8F%E8%AE%AE/" class="nav__link">
-                    <div>
-                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M589.088 790.624L310.464 512l278.624-278.624 45.248 45.248L400.96 512l233.376 233.376z" fill="#808080"></path></svg>
-                    </div>
-                    <div>
-                        <div class="nav__label">
-                            Previous Post
-                        </div>
-                        <div class="nav__title">
-                            老电脑刷入nvme协议
-                        </div>
-                    </div>
-                </a>
-            
         </div>
         <div class="nav__next">
             
-                <a href="/2021/03/22/git%E5%9F%BA%E7%A1%80%E4%BD%BF%E7%94%A8/" class="nav__link">
+                <a href="/2021/03/22/promise%E7%9A%84%E7%90%86%E8%A7%A3/" class="nav__link">
                     <div>
                         <div class="nav__label">
                             Next Post
                         </div>
                         <div class="nav__title">
-                            git基础使用
+                            promise的理解
                         </div>
                     </div>
                     <div>
